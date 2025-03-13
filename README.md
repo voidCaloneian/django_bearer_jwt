@@ -39,6 +39,7 @@
 	"identifier": "void4function@gmail.com", 
     "password": "qwepassword123"
   }
+  ```
 
   **Пример ответа**:
   {
@@ -60,7 +61,7 @@
 	"identifier": "void4function@gmail.com", 
     "password": "qwepassword123"
   }
-
+  ```
   **Пример ответа**:
   {
     "token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
