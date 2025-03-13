@@ -42,10 +42,12 @@
   ```
 
   **Пример ответа**:
+  ```json
   {
     "token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGc..."
   }
+  ```
 
 - **POST** ```/api/accounts/signin/``` - авторизация пользователя
   
