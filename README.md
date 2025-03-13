@@ -12,7 +12,7 @@
 3. Создание и применение миграций
    ```bash
    docker compose exec web python src/manage.py makemigrations
-   docker compose exec web python src.manage.py migrate
+   docker compose exec web python src/manage.py migrate
    ```
 4. Опциональный запуск тестов
    ```bash
