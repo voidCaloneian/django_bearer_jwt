@@ -65,10 +65,12 @@
   }
   ```
   **Пример ответа**:
+  ```json
   {
     "token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGc..."
   }
+  ```
 
 - **POST** ```/api/accounts/logout/``` - логаут пользователя
 - - Если ```all: true```, то удаляются все refresh токены
