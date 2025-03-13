@@ -27,11 +27,13 @@
 - **POST** ```/api/accounts/signup/``` - регистрация пользователя
   
   **Параметры**
+  
   ```identifier``` - ```string``` обязательный, **идентификатор** в формате почты, либо номера телефона (телефон начинающийся с 8 или +7 считается одинаковым)
 
   ```password``` - ```string``` обязательный, **пароль**
   
   **Пример**:
+  
   ```json
   {
 	"identifier": "void4function@gmail.com", 
@@ -45,8 +47,9 @@
   }
 
 - **POST** ```/api/accounts/signin/``` - авторизация пользователя
-- 
+  
   **Параметры**
+  
   ```identifier``` - ```string``` обязательный, **идентификатор** в формате почты, либо номера телефона (телефон начинающийся с 8 или +7 считается одинаковым)
 
   ```password``` - ```string``` обязательный, **пароль**
@@ -72,11 +75,13 @@
   ```Authorization```: ```Bearer <access token>``` - ```JWT acess token``` обязательный 
 
   **Параметры**
+  
   ```all``` - ```bool``` обязательный, **удалять ли все рефреш токены**
 
   ```refresh``` - ```string``` обязательный, **refresh token**, если ```all: false``` 
   
   **Пример**:
+  
   ```Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxODU5MTAxLCJpYXQiOjE3NDE4NTg4MDEsImp0aSI6IjczMDE0YzFlZGYzYTQ5ZmQ4MmNkOTcxNGJhODg5ZDhkIiwidXNlcl9pZCI6MX0.FfxAiKsMlQIFys65qMJ_frSGELU01ynp4q5Pn4wPlYI```
   ```json
   {
@@ -85,6 +90,7 @@
   }
   ```
   **Пример ответа**:
+  
   ```json
   {
     "detail": "Текущий токен разлогинен",
@@ -92,13 +98,17 @@
   }
   ```
 - **GET** ```/api/accounts/info/``` - информация о пользователе
+  
   **Заголовки**
+  
   ```Authorization```: ```Bearer <access token>``` - ```JWT acess token``` обязательный
 
   **Пример**:
+  
   ```Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxODU5MTAxLCJpYXQiOjE3NDE4NTg4MDEsImp0aSI6IjczMDE0YzFlZGYzYTQ5ZmQ4MmNkOTcxNGJhODg5ZDhkIiwidXNlcl9pZCI6MX0.FfxAiKsMlQIFys65qMJ_frSGELU01ynp4q5Pn4wPlYI```
 
-  **Пример ответа**:
+  **Пример ответа**
+  
   ```json
   {
     "identifier": "+79525295976",
@@ -110,12 +120,15 @@
 - **GET** ```/api/accounts/info/``` - пинг до ya.ru
   
   **Заголовки**
+  
   ```Authorization```: ```Bearer <access token>``` - ```JWT acess token``` обязательный 
 
   **Пример**:
+  
   ```Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxODU5MTAxLCJpYXQiOjE3NDE4NTg4MDEsImp0aSI6IjczMDE0YzFlZGYzYTQ5ZmQ4MmNkOTcxNGJhODg5ZDhkIiwidXNlcl9pZCI6MX0.FfxAiKsMlQIFys65qMJ_frSGELU01ynp4q5Pn4wPlYI```
 
-  **Пример ответа**:
+  **Пример ответа**
+  
   ```json
   {
     "latency": 1.5751018524169922,
